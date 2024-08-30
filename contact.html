@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Aaditya Enterprises</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="assets/logo3.png" alt="Aaditya Enterprises Logo" class="logo">
+                <h1>Aaditya Enterprises</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="help.html">Help</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <h3>Aaditya Enterprises</h3>
+                <p><strong>Address:</strong> D/401, Anjani Homes, NR. ST. Basil School, Village: Jambuva, Vadodara-390014</p>
+                <p><strong>Mobile:</strong> 7405401386</p>
+                <p><strong>Email:</strong> <a href="mailto:aadityaenterprisebaroda@gmail.com">aadityaenterprisebaroda@gmail.com</a></p>
+                <p><strong>GST:</strong> 24DNAPP9953H1ZM</p>
+                <p><strong>MSME:</strong> UDYAM-GJ-24-0143113</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-form">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form action="send_mail.php" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+            
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Aaditya Enterprises. All rights reserved.</p>
+    </footer>
+</body>
+</html>

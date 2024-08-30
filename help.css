@@ -1,0 +1,266 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.logo {
+    width: auto;
+    height: 80px;
+    margin-right: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    white-space: nowrap;
+}
+
+nav {
+    flex: 2;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff5722;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        text-align: left;
+        width: 100%;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .logo {
+        height: 50px;
+    }
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h1, section h2 {
+    border-bottom: 2px solid #ff5722;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+/* FAQ Section */
+.faq-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Guides and Tutorials */
+.guide-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #ff5722;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Support Form */
+#contact-form {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#contact-form button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #e64a19;
+}
+
+/* Additional Resources Section */
+#additional-resources {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+footer nav ul li {
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer nav ul li a:hover {
+    color: #ff5722;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+.social-media a:hover {
+    color: #ff5722;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    footer {
+        text-align: center;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+    }
+
+    footer nav ul li {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    footer nav ul {
+        font-size: 0.9em;
+    }
+}
