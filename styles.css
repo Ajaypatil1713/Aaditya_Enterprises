@@ -130,6 +130,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 #hero {
+    /* background: url('assets/Forklif.jpg') no-repeat center center; */
     background: url('assets/Forklif.jpg') no-repeat center center;
     height: 100vh;
     color: #fff;
@@ -142,6 +143,9 @@ nav ul li a:hover {
     position: relative;
     background-attachment: fixed;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #hero h1 {
