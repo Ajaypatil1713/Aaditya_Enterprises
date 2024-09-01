@@ -1,5 +1,10 @@
 
 /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 h2 {
     text-align: center;
     margin-bottom: 50px;
@@ -25,108 +30,89 @@ body {
 /* Header */
 header {
     background-color: #333;
-    color: #fff;
-    /* position: sticky; */
-    top: 0;
-    z-index: 1000;
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+  .navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 10px 20px; /* Added padding for better spacing */
-}
-
-.logo-container {
+    align-items: center;
+  }
+  
+  .nav-left {
     display: flex;
     align-items: center;
-    flex: 1;
-    min-width: 150px; /* Ensures minimum space for the logo */
-}
-
-.logo {
-    width: auto;
-    height: 60px; /* Reduced height for better fit on mobile */
-    margin-right: 15px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 1.5em;
-    white-space: nowrap;
-}
-
-nav {
-    flex: 2;
-    text-align: right;
-    width: 100%; /* Ensures full-width nav on mobile */
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
+  }
+  
+  .nav-right {
     display: flex;
-    justify-content: flex-end;
-    margin: 0;
-    flex-wrap: wrap;
-}
-
-nav ul li {
-    margin-left: 15px; /* Reduced margin for closer spacing */
-}
-
-nav ul li a {
+    align-items: center;
+    margin-left: auto; /* Push the navigation to the right side */
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #f4f4f4;
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .company-name {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      display: none;
     }
-
-    .logo {
-        height: 50px;
+  
+    .nav-right.active .nav-links {
+      display: flex;
     }
-
-    nav {
-        text-align: left;
+  
+    .nav-links li {
+      margin-bottom: 10px;
+      text-align: center;
     }
-
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        padding-left: 0; /* Adjusts padding for mobile */
+  
+    .menu-toggle {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 20px;
     }
-
-    nav ul li {
-        margin: 5px 0; /* Adjusted margin for better spacing */
-        
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5em; /* Further reduced for small screens */
-        margin-top: 10px;
-    }
-
-    .logo {
-        height: 40px; /* Reduced height for smaller screens */
-    }
-
-    nav ul {
-        margin-top: 10px; /* Added margin to separate from logo */
-    }
-}
-
+  }
 
 /* Hero Section */
 #hero {

@@ -8,23 +8,23 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="logo-container">
-                <img src="assets/logo3.png" alt="Aaditya Enterprises Logo" class="logo">
-                <h1>Aaditya Enterprises</h1>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Our Services</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <!-- <li><a href="help.html">Help</a></li> -->
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+        <nav class="navbar">
+          <div class="nav-left">
+            <img src="assets/logo3.png" alt="Company Logo" class="logo">
+            <span class="company-name">Aaditya Enterprises</span>
+          </div>
+          <div class="nav-right">
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Our Services</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      </header>
 
     <main>
         <section id="hero">
@@ -71,6 +71,10 @@
             <div class="slider-container">
                 <div class="slider-wrapper">
                     <div class="product-card">
+                        <img src="products/Hand Pallet Truck 2.5.jpg" alt="Hand Pallet Truck 2.5T/ 3T/5T">
+                        <h3>Hand Pallet Truck 2.5T/ 3T/5T</h3>
+                    </div>
+                    <div class="product-card">
                         <img src="products/Hand Pallet Truck SS.jpg" alt="Hand Pallet Truck SS">
                         <h3>Hand Pallet Truck SS</h3>
                     </div>
@@ -97,6 +101,10 @@
                     <div class="product-card">
                         <img src="products/Manual Stacker.jpg" alt="Manual Stacker">
                         <h3>Manual Stacker</h3>
+                    </div>
+                    <div class="product-card">
+                        <img src="products/Fully Electric Pallet Truck1.png" alt="Fully Electric Pallet Truck">
+                        <h3>Fully Electric Pallet Truck</h3>
                     </div>
                     <div class="product-card">
                         <img src="products/semi electric staker.jpg" alt="Semi Electric Stacker">
@@ -168,16 +176,8 @@
                     <div class="product-card">
                         <img src="products/Electric Platform.jpg" alt="Electric Platform Truck">
                         <h3>Electric Platform Truck</h3>
-                    </div>
-                    <div class="product-card">
-                        <img src="products/Hand Pallet Truck 2.5.jpg" alt="Hand Pallet Truck 2.5T/ 3T/5T">
-                        <h3>Hand Pallet Truck 2.5T/ 3T/5T</h3>
-                    </div>
-            
-                    <div class="product-card">
-                        <img src="products/Fully Electric Pallet Truck1.png" alt="Fully Electric Pallet Truck">
-                        <h3>Fully Electric Pallet Truck</h3>
-                    </div>
+                    </div>            
+                    
                     <div class="product-card">
                         <img src="products/Heavy Duty Diesel Forklift 1.JPG" alt="Heavy Duty Diesel Forklift">
                         <h3>Heavy Duty Diesel Forklift</h3>
@@ -383,6 +383,7 @@
     <script src="scripts.js"></script>
     <script src="script1.js"></script>
     <script src="script2.js"></script>
+    <script src="script3.js"></script>
     
 </body>
 </html>
