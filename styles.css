@@ -119,6 +119,7 @@ header {
     }
   }
   
+  
 
 /* Hero Section */
 #hero {
@@ -166,11 +167,20 @@ header {
     background-color: #ff3b2c;
 }
 
+/* Default for larger screens */
+.marquee-text {
+    scrollamount: 25; /* Original speed */
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     #hero {
         background-attachment: scroll;
         background-size: cover;
+    }
+
+    .marquee-text {
+        scrollamount: 10; /* Slower scrolling speed for mobile devices */
     }
 
     #hero h1 {
@@ -184,6 +194,10 @@ header {
 }
 
 @media (max-width: 480px) {
+    .marquee-text {
+        scrollamount: 5; /* Further slowing for very small screens */
+    }
+
     #hero {
         background-size: cover;
         background-position: center;
@@ -198,6 +212,8 @@ header {
         margin: 10px 20px; /* Further adjusting margin for very small screens */
     }
 }
+
+
 
 /* Services Section */
 #services {
