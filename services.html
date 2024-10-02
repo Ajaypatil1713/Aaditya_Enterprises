@@ -3,30 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
     <title>Our Services | Aaditya Enterprises</title>
     <link rel="stylesheet" href="services.css">
 </head>
 <body>
 
     <!-- Header Section -->
-    <header>
-        <nav class="navbar">
-          <div class="nav-left">
-            <img src="assets/logo3.png" alt="Company Logo" class="logo">
-            <span class="company-name">Aaditya Enterprises</span>
-          </div>
-          <div class="nav-right">
-            <ul class="nav-links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="services.html">Our Services</a></li>
-              <li><a href="products.html">Products</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-          </div>
-        </nav>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-      </header>
+    <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <!-- <img src="assets/logo3.png" alt="Company Logo" class="logo-img"> -->
+        <a href="index.html" class="logo-text"><img src="assets/logo3.png" alt="Company Logo" class="logo-img"> Aaditya Enterprises</a>
+    
+        <ul class="nav-links">
+            <i class="uil uil-times navCloseBtn"></i>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
 
     <!-- Services Section -->
     <section id="services">
@@ -70,5 +68,6 @@
         </div>
     </footer>
     <script src="script3.js"></script>
+    <script src="script4.js"></script>
 </body>
 </html>

@@ -2,29 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aaditya Enterprises</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-15.woff2" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <script src="script4.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-          <div class="nav-left">
-            <img src="assets/logo3.png" alt="Company Logo" class="logo">
-            <span class="company-name">Aaditya Enterprises</span>
-          </div>
-          <div class="nav-right">
-            <ul class="nav-links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="services.html">Our Services</a></li>
-              <li><a href="products.html">Products</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-          </div>
-        </nav>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-      </header>
+    <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <!-- <img src="assets/logo3.png" alt="Company Logo" class="logo-img"> -->
+        <a href="index.html" class="logo-text"><img src="assets/logo3.png" alt="Company Logo" class="logo-img"> Aaditya Enterprises</a>
+    
+        <ul class="nav-links">
+            <i class="uil uil-times navCloseBtn"></i>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <!-- <li><a href="help.html">Help</a></li> -->
+        </ul>
+    </nav>
+    
 
     <main>
         <section id="hero">
@@ -44,11 +46,11 @@
                 <div class="service-grid">
                     <div class="service-item">
                         <h3>Forklift Maintenance</h3>
-                        <p>Provide Dock leveler, Scissor Lift, Hydraulic/ Hoist Goods Lift, Ariel Mainteinance Work Platform</p>
+                        <p>Provide AMC, PMC, Dock leveler, Scissor Lift, Hydraulic/ Hoist Goods Lift, Ariel Mainteinance Work Platform</p>
                     </div>
                     <div class="service-item">
                         <h3>Material Handling Equipment</h3>
-                        <p>High-quality battery replacement services for forklifts.</p>
+                        <p>High-quality battery replacement and all services for forklifts we provide.</p>
                     </div>
                     <div class="service-item">
                         <h3>Customized Solutions</h3>
@@ -194,76 +196,6 @@
             </div>
         </section>
         
-        
-        <section id="testimonials">
-            <div class="container">
-                <h2>What Our Clients Say</h2>
-                <div class="testimonial-slider">
-                    <div class="testimonial-wrapper">
-                        <div class="testimonial-item">
-                            <p>"Aaditya Enterprises provided exceptional service for our forklift needs!"</p>
-                            <h4>- Client Name</h4>
-                        </div>
-                        <div class="testimonial-item">
-                            <p>"Professional and reliable service. Highly recommended!"</p>
-                            <h4>- Client Name</h4>
-                        </div>
-                        <div class="testimonial-item">
-                            <p>"Excellent support and quality parts. Very satisfied with the service."</p>
-                            <h4>- Client Name</h4>
-                        </div>
-                        <div class="testimonial-item">
-                            <p>"Excellent support and quality parts. Very satisfied with the service."</p>
-                            <h4>- Client Name</h4>
-                        </div>
-                        <div class="testimonial-item">
-                            <p>"Excellent support and quality parts. Very satisfied with the service."</p>
-                            <h4>- Client Name</h4>
-                        </div>
-                        <div class="testimonial-item">
-                            <p>"Excellent support and quality parts. Very satisfied with the service."</p>
-                            <h4>- Client Name</h4>
-                        </div>
-                        <div class="testimonial-item">
-                            <p>"Excellent support and quality parts. Very satisfied with the service."</p>
-                            <h4>- Client Name</h4>
-                        </div>
-                        <div class="testimonial-item">
-                            <p>"Excellent support and quality parts. Very satisfied with the service."</p>
-                            <h4>- Client Name</h4>
-                        </div>
-                        <div class="testimonial-item">
-                            <p>"Excellent support and quality parts. Very satisfied with the service."</p>
-                            <h4>- Client Name</h4>
-                        </div>
-                        <div class="testimonial-item">
-                            <p>"Excellent support and quality parts. Very satisfied with the service."</p>
-                            <h4>- Client Name</h4>
-                        </div>
-                        <div class="testimonial-item">
-                            <p>"Excellent support and quality parts. Very satisfied with the service."</p>
-                            <h4>- Client Name</h4>
-                        </div>
-                        <div class="testimonial-item">
-                            <p>"Excellent support and quality parts. Very satisfied with the service."</p>
-                            <h4>- Client Name</h4>
-                        </div>
-                        <div class="testimonial-item">
-                            <p>"Excellent support and quality parts. Very satisfied with the service."</p>
-                            <h4>- Client Name</h4>
-                        </div>
-                        <div class="testimonial-item">
-                            <p>"Excellent support and quality parts. Very satisfied with the service."</p>
-                            <h4>- Client Name</h4>
-                        </div>
-                    </div>
-                </div>
-                <button class="preview">&#10094;</button>
-                <button class="nextpage">&#10095;</button>
-            </div>
-        </section>
-        
-
         <section id="about">
             <div class="container">
                 <h2>About Us</h2>
@@ -289,10 +221,10 @@
                     <div class="slider-container">
                         <div class="slider-wrapper">
                             <div class="partner">
-                                <img src="assets/cosmos.png" alt="Cosmos Enterprises">
+                                <img src="assets/swiss.png" alt="Swiss Pac">
                             </div>
                             <div class="partner">
-                                <img src="assets/TML.png" alt="TML Enterprises">
+                                <img src="assets/mc.jpg" alt="MC Bauchemie">
                             </div>
                             <div class="partner">
                                 <img src="assets/ambuja.png" alt="Ambuja Enterprises">
@@ -304,7 +236,7 @@
                                 <img src="assets/bhavik.png" alt="Bhavik Enterprises">
                             </div>
                             <div class="partner">
-                                <img src="assets/harsh.png" alt="Harsh Enterprises">
+                                <img src="assets/yash hydraulics.jpg" alt="Yash Hydraulics">
                             </div>
                             <div class="partner">
                                 <img src="assets/mithun.png" alt="Mithun Enterprises">
@@ -341,7 +273,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>About Us</h4>
-                    <p>Aaditya Enterprises is dedicated to providing top-notch services for forklifts, material handling equipment, and diesel generators.</p>
+                    <p>Aaditya Enterprises is dedicated to providing AMC, PMC,  top-notch services for forklifts, material handling equipment, and diesel generators.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
@@ -351,20 +283,20 @@
                         <li><a href="services.html">Our Services</a></li>
                         <li><a href="products.html">Products</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="help.html">Help</a></li>
+                        <!-- <li><a href="help.html">Help</a></li> -->
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact Us</h4>
-                    <p>Email: <a href="mailto:aadityaenterprisebaroda@gmail.com">aadityaenterprisebaroda@gmail.com</a></p>
-                    <p>Phone: <a href="tel:+7405401386">+917405401386</a></p>
-                    <p>Address: D/401, Anjani Homes, NR. ST. Basil School, Village: Jambuva, Vadodara-390014</p>
+                    <p><b>Email:</b> <a href="mailto:aadityaenterprisebaroda@gmail.com">aadityaenterprisebaroda@gmail.com</a></p>
+                    <p><b>Phone:</b> <a href="tel:+7405401386">+917405401386</a></p>
+                    <p><b>Address:</b> D/401, Anjani Homes, NR. ST. Basil School, Village: Jambuva, Vadodara-390014</p>
                 </div>
                 <div class="footer-section">
                     <h4>Follow Us</h4>
                     <div class="social-icons">
                         <a href="#"><img src="assets/Social-Media-Logos/facebook.png" alt="Facebook" class="social-icon"></a>
-                        <a href="#"><img src="assets/Social-Media-Logos/twitter-logo.png" alt="Twitter" class="social-icon"></a>
+                        <!-- <a href="#"><img src="assets/Social-Media-Logos/twitter-logo.png" alt="Twitter" class="social-icon"></a> -->
                         <a href="#"><img src="assets/Social-Media-Logos/linkedin.png" alt="LinkedIn" class="social-icon"></a>
                         <a href="#"><img src="assets/Social-Media-Logos/instagram.png" alt="Instagram" class="social-icon"></a>
                         <a href="https://wa.me/917405401386" target="_blank">
@@ -379,11 +311,11 @@
             </div>
         </div>
     </footer>
+
+    <script src="trustedPartner.js"></script>
+    <script src="productSlider.js"></script>
+    <script src="toggleButton.js"></script>
     
-    <script src="scripts.js"></script>
-    <script src="script1.js"></script>
-    <script src="script2.js"></script>
-    <script src="script3.js"></script>
     
 </body>
 </html>
