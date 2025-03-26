@@ -234,10 +234,10 @@ a {
     transition: transform 0.3s ease;
 }
 
-.service-item h3 {
+.service-item h3 a{
     margin-bottom: 15px;
     font-size: 1.5em;
-    color: #333;
+    color: #0d0101;
 }
 
 .service-item p {
